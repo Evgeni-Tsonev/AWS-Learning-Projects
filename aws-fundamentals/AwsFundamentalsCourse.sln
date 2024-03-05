@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqsPublisher", "3.Sqs\SqsPu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customers.Api", "3.Sqs\Customers.Api\Customers.Api.csproj", "{6DDAED16-FD91-467A-9B64-C0BCBE3EAB16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers.Consumer", "3.Sqs\Customers.Consumer\Customers.Consumer.csproj", "{02641B5A-02B5-4909-B572-8069B50E8B24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customers.Consumer", "3.Sqs\Customers.Consumer\Customers.Consumer.csproj", "{02641B5A-02B5-4909-B572-8069B50E8B24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnsPublisher", "4.Sns\SnsPublisher\SnsPublisher.csproj", "{FD734265-64A3-4F8E-B71D-048E08B41F5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{02641B5A-02B5-4909-B572-8069B50E8B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02641B5A-02B5-4909-B572-8069B50E8B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02641B5A-02B5-4909-B572-8069B50E8B24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD734265-64A3-4F8E-B71D-048E08B41F5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD734265-64A3-4F8E-B71D-048E08B41F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD734265-64A3-4F8E-B71D-048E08B41F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD734265-64A3-4F8E-B71D-048E08B41F5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +60,7 @@ Global
 		{1B845456-9875-4A64-A30B-5073979B9AEA} = {AE28BEE1-B578-439A-B596-D991B9851F5A}
 		{6DDAED16-FD91-467A-9B64-C0BCBE3EAB16} = {AE28BEE1-B578-439A-B596-D991B9851F5A}
 		{02641B5A-02B5-4909-B572-8069B50E8B24} = {AE28BEE1-B578-439A-B596-D991B9851F5A}
+		{FD734265-64A3-4F8E-B71D-048E08B41F5C} = {BA648C25-CB9E-4FAA-AF91-86A37CCEA382}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C84D1A57-8483-46A2-BE3F-FFC158C35769}
