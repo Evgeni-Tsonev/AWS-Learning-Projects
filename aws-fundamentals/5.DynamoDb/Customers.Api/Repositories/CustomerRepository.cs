@@ -59,7 +59,19 @@ public class CustomerRepository : ICustomerRepository
 
     public async Task<IEnumerable<CustomerDto>> GetAllAsync()
     {
-        throw new NotImplementedException();
+        //Avoid scan request because is exponentially slower and insanely expensive
+        var scanRequest = new ScanRequest
+        {
+            TableName = _tableIName
+        };
+
+        var response = await _dynamoDB.ScanAsync(scanRequest);
+
+        return response.Items.Select(x =>
+        {
+            var json = Document.FromAttributeMap(x).ToJson();
+            return JsonSerializer.Deserialize<CustomerDto>(json);
+        })!;
     }
 
     public async Task<bool> UpdateAsync(CustomerDto customer)
