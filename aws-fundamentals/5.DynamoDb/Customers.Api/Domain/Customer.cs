@@ -1,5 +1,4 @@
 ﻿namespace Customers.Api.Domain;
-
 public class Customer
 {
     public required Guid Id { get; init; } = Guid.NewGuid();
