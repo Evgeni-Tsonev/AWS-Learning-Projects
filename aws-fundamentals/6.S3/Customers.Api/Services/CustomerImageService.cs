@@ -6,7 +6,7 @@ namespace Customers.Api.Services;
 public class CustomerImageService : ICustomerImageService
 {
     private readonly IAmazonS3 _s3;
-    private readonly string _bucketName = "nickawscourse";
+    private readonly string _bucketName = "evg-aws-course";
 
     public CustomerImageService(IAmazonS3 s3)
     {
